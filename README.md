@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Bill Manager Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The **Bill Manager Dashboard** is a React-based web application designed to help users manage their monthly bills efficiently. The dashboard provides features to add, edit, and delete bills, set a monthly budget, filter bills by category, and visualize expenses through a time-series chart.
 
-## Available Scripts
+## Features
+- **Add Bills**: Add new bills with details such as description, category, amount, and date.
+- **Edit Bills**: Edit existing bill details directly from the dashboard.
+- **Delete Bills**: Remove bills that are no longer needed.
+- **Highlight Important Bills**: Automatically highlight bills that can be paid within the monthly budget.
+- **Set Monthly Budget**: Define your monthly spending limit and visualize how much is left.
+- **Filter by Category**: Filter bills by categories for better organization.
+- **Expense Visualization**: View your bills over time using a time-series chart.
+- **Responsive Design**: Fully responsive for use on desktops and mobile devices.
 
-In the project directory, you can run:
+## Technologies Used
+- **Frontend**: React
+- **State Management**: Redux
+- **Icons**: React Icons
+- **Styling**: CSS (Bootstrap classes used alongside custom styles)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/bill-manager-dashboard.git
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the project directory:
+   ```bash
+   cd bill-manager-dashboard
+   ```
 
-### `npm test`
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+5. Open your browser and visit:
+   ```
+   http://localhost:3000
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## File Structure
+```
+Bill Manager Dashboard/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── BillForm.jsx
+│   │   ├── BillFilter.jsx
+│   │   ├── TimeSeriesChart.jsx
+│   ├── redux/
+│   │   ├── actions/
+│   │   │   ├── billActions.js
+│   │   ├── reducers/
+│   │   │   ├── billReducer.js
+│   ├── styles/
+│   │   ├── BillDashboard.css
+│   ├── App.js
+│   ├── index.js
+├── package.json
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
+1. Add a new bill by filling out the form and clicking the "Add Bill" button.
+2. Adjust your monthly budget using the input field on the dashboard.
+3. Filter bills by category using the dropdown menu.
+4. View highlighted bills that fit within your remaining budget.
+5. Click the edit or delete icons to modify or remove a bill.
+6. Analyze expenses over time with the built-in chart.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Thank you for using the **Bill Manager Dashboard**. Happy budgeting!
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
