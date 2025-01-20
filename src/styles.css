@@ -1,25 +1,20 @@
-/* styles.css */
 
-/* General body styling */
-body {
-    background-color: #f4f7fa;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+body{
+    background-color: #0b0c10;
+    color: #66fcf1;
+  
   }
   
-  /* Card styling for Bill Dashboard */
   .card {
     margin-bottom: 20px;
   }
   
-  /* Heading styles */
   h2, h3 {
     font-weight: bold;
     color: #333;
   }
   
-  /* Add padding to BillForm */
+
   .form-container {
     padding: 20px;
     background-color: #fff;
@@ -27,22 +22,20 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Bill Dashboard Table */
+
   .table {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
-  /* TimeSeriesChart styling */
+
   .chart-container {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Button styling */
+
   button {
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -52,13 +45,11 @@ body {
     background-color: #0275d8;
     color: white;
   }
-  
-  /* Custom dropdown for filtering */
+
   .dropdown-menu {
     min-width: 200px;
   }
-  
-  /* Optional custom styling */
+
 .btn-light {
     border: none;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
